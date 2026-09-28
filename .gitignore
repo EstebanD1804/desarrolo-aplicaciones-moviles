@@ -1,0 +1,18 @@
+#Archivos de macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+.venv/
+
+# Logs y distribuciones
+bin/
+dist/
+*.log
+
