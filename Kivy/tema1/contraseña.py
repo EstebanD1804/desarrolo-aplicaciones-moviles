@@ -34,7 +34,7 @@ class LoginScreen(GridLayout):
 
     def validar(self, instance):
         if self.username.text == 'admin':
-            if self.password.text == 'adminitel2026':
+            if self.password.text == 'magneto':
                 self.resultado.text = "Clave correcta, Felicidades!!"
             else:
                 self.resultado.text = "Clave incorrecta, vuelva a intentar."
