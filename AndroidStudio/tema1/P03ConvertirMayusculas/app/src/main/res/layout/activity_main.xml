@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Manejo de Strings, Convertir a Mayusculas" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Escribir texto en minúsculas" />
+
+    <EditText
+        android:id="@+id/txttexto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto en mayúsculas" />
+
+    <EditText
+        android:id="@+id/txtres"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/boton_ejecutar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir a Mayúsculas" />
+
+</LinearLayout>
