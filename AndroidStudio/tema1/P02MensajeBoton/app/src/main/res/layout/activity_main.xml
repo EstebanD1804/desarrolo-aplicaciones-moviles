@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programa del uso del boton" />
+
+    <Button
+        android:id="@+id/nuestro_boton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Mensaje" />
+
+</LinearLayout>
