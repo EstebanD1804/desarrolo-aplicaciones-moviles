@@ -1,24 +1,83 @@
 package com.esteband1804.p06operacionesbasicas;
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.*;
 
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
+    //Variables que toman los valores de las cajas
+    private EditText numero1;
+    private EditText numero2;
+    private EditText res;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState)
+    {
+        //android:layout_width="200px" Tamano de una caja
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+
+        //Se toman los valores de las cajas de texto
+        numero1 = (EditText) findViewById(R.id.txtnumero1);
+        numero2 = (EditText) findViewById(R.id.txtnumero2);
+        res = (EditText) findViewById(R.id.txtres);
+
+        Button botonSuma=(Button) findViewById(R.id.boton_sumar);
+        Button botonResta=(Button) findViewById(R.id.boton_restar);
+        Button botonMult=(Button) findViewById(R.id.boton_mult);
+        Button botonDiv=(Button) findViewById(R.id.boton_div);
+
+        botonSuma.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                int num1,num2,result;
+                //Se convierte el valor texto a número
+                num1=Integer.parseInt(numero1.getText().toString());
+                num2=Integer.parseInt(numero2.getText().toString());
+                //Se calcula la sumatoria
+                result=num1+num2;
+                //Se muestra el resultado
+                res.setText(""+Integer.toString(result));
+            }
+        });
+
+        botonResta.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                int num1,num2,result;
+                //Se convierte el valor texto a número
+                num1=Integer.parseInt(numero1.getText().toString());
+                num2=Integer.parseInt(numero2.getText().toString());
+                //Se calcula la resta
+                result=num1-num2;
+                //Se muestra el resultado
+                res.setText(""+Integer.toString(result));
+            }
+        });
+
+        botonMult.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                int num1,num2,result;
+                //Se convierte el valor texto a número
+                num1=Integer.parseInt(numero1.getText().toString());
+                num2=Integer.parseInt(numero2.getText().toString());
+                //Se calcula la multiplicación
+                result=num1*num2;
+                //Se muestra el resultado
+                res.setText(""+Integer.toString(result));
+            }
+        });
+
+        botonDiv.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                int num1,num2,result;
+                //Se convierte el valor texto a número
+                num1=Integer.parseInt(numero1.getText().toString());
+                num2=Integer.parseInt(numero2.getText().toString());
+                //Se calcula la división
+                result=num1/num2;
+                //Se muestra el resultado
+                res.setText(""+Integer.toString(result));
+            }
         });
     }
 }
