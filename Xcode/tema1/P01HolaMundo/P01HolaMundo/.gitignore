@@ -1,0 +1,5 @@
+# Archivos generados y preferencias personales de Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserstate
