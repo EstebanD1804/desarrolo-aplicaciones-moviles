@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tPM-FG-J2n">
+                                <rect key="frame" x="96.666666666666686" y="284" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZoL-7P-Is3"/>
+                                    <constraint firstAttribute="height" constant="44" id="fJ9-zv-hdl"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sumar">
+                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="metodo_sumar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sgp-yt-xec"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resultado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vec-Wj-HB8">
+                                <rect key="frame" x="56.666666666666657" y="344" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4lp-lq-tW4"/>
+                                    <constraint firstAttribute="width" constant="280" id="xlA-U3-jbp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ec3-Xx-eGd">
+                                <rect key="frame" x="96.666666666666686" y="404" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="xd5-fQ-KIp"/>
+                                    <constraint firstAttribute="height" constant="44" id="yxA-Qa-X66"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Cerrar"/>
+                                <connections>
+                                    <action selector="metodoCerrar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RfC-BV-Myx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Intoduce el número 1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfZ-uu-I9Z">
+                                <rect key="frame" x="56.666666666666657" y="164" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="bWx-7N-m3Y"/>
+                                    <constraint firstAttribute="height" constant="44" id="mPS-Fo-9pa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Intoduce el número 2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cjm-tD-BCH">
+                                <rect key="frame" x="56.666666666666657" y="224" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Bh4-nK-j8U"/>
+                                    <constraint firstAttribute="height" constant="44" id="ptc-bu-lOH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qfZ-uu-I9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7DA-qP-6Jt"/>
+                            <constraint firstItem="Cjm-tD-BCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8mk-Ee-Opv"/>
+                            <constraint firstItem="tPM-FG-J2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Y4-dR-x2N"/>
+                            <constraint firstItem="tPM-FG-J2n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-120" id="9iM-sq-AdR"/>
+                            <constraint firstItem="vec-Wj-HB8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-60" id="APk-0h-b0X"/>
+                            <constraint firstItem="vec-Wj-HB8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AhX-XA-sFN"/>
+                            <constraint firstItem="qfZ-uu-I9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-240" id="JWu-ga-rP0"/>
+                            <constraint firstItem="Cjm-tD-BCH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-180" id="Y4h-tp-Axc"/>
+                            <constraint firstItem="ec3-Xx-eGd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d4C-pX-api"/>
+                            <constraint firstItem="qfZ-uu-I9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nC3-Kk-aei"/>
+                            <constraint firstItem="Cjm-tD-BCH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdg-xh-nlX"/>
+                            <constraint firstItem="ec3-Xx-eGd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zBR-iT-CXA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label_resultado" destination="vec-Wj-HB8" id="5Za-fj-BAO"/>
+                        <outlet property="text_n1" destination="qfZ-uu-I9Z" id="mly-qa-Fsv"/>
+                        <outlet property="text_n2" destination="Cjm-tD-BCH" id="jVc-SK-ZTb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78.625954198473281" y="111.9718309859155"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
