@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ASO-aw-xOq">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--FirstViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="FirstViewController" id="BYZ-38-t0r" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Área de un círculo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBY-dk-q5G">
+                                <rect key="frame" x="46.666666666666657" y="124" width="300" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Htk-1L-mi7"/>
+                                    <constraint firstAttribute="width" constant="300" id="edH-dA-o9J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kk3-7m-yrS">
+                                <rect key="frame" x="136.66666666666666" y="176.33333333333331" width="119.99999999999997" height="119.33333333333331"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="4cG-tm-Hgu"/>
+                                    <constraint firstAttribute="width" constant="120" id="CqC-le-SQU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="GGt-SB-n83"/>
+                                    <constraint firstAttribute="height" constant="120" id="UVe-ap-qiI"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introducir el radio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="982-2I-hJs">
+                                <rect key="frame" x="56.666666666666657" y="324" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DYF-Gp-9me"/>
+                                    <constraint firstAttribute="width" constant="280" id="ukg-31-gMd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rvr-GR-Esk">
+                                <rect key="frame" x="96.666666666666686" y="384" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="2ac-tH-48q"/>
+                                    <constraint firstAttribute="height" constant="44" id="6kC-Jw-biH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular área"/>
+                                <connections>
+                                    <action selector="botonArea:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Pt-mF-waF"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Área calculada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sWe-ff-gRE">
+                                <rect key="frame" x="56.666666666666657" y="444" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="EWi-UO-MMy"/>
+                                    <constraint firstAttribute="width" constant="280" id="q5k-Z5-cRT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sWe-ff-gRE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AjU-EP-25Z"/>
+                            <constraint firstItem="982-2I-hJs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EP7-k7-8Ma"/>
+                            <constraint firstItem="Rvr-GR-Esk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NjO-US-YWe"/>
+                            <constraint firstItem="hBY-dk-q5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZMM-Fq-HfT"/>
+                            <constraint firstItem="982-2I-hJs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-80" id="aTw-Uq-vWw"/>
+                            <constraint firstItem="hBY-dk-q5G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="g79-od-h2F"/>
+                            <constraint firstItem="kk3-7m-yrS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nDn-P1-spS"/>
+                            <constraint firstItem="kk3-7m-yrS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-190" id="pdO-Nk-BuE"/>
+                            <constraint firstItem="hBY-dk-q5G" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-280" id="rde-KU-K18"/>
+                            <constraint firstItem="Rvr-GR-Esk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-20" id="uND-Kk-j1s"/>
+                            <constraint firstItem="hBY-dk-q5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uVy-9O-Mmh"/>
+                            <constraint firstItem="sWe-ff-gRE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="40" id="wJz-Tb-sdF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Circulo" image="circle.fill" catalog="system" id="0ZR-VK-4si"/>
+                    <connections>
+                        <outlet property="textArea" destination="sWe-ff-gRE" id="G7o-YH-qvp"/>
+                        <outlet property="textCirculo" destination="982-2I-hJs" id="zB8-hI-bHd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739.69465648854964" y="111.9718309859155"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Tqd-FT-1Gn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ASO-aw-xOq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YqR-UX-GPN">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Mi7-Mq-QlO"/>
+                        <segue destination="kbI-6E-1Kh" kind="relationship" relationship="viewControllers" id="4f3-Wh-Fuu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WdC-B9-ubR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-187.02290076335876" y="111.9718309859155"/>
+        </scene>
+        <!--SecondViewController-->
+        <scene sceneID="vre-gv-nYT">
+            <objects>
+                <viewController title="SecondViewController" id="kbI-6E-1Kh" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qMf-np-ZeM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Área de un cuadrado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HH-he-ej0">
+                                <rect key="frame" x="46.666666666666657" y="124" width="300" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="C1E-B1-uq5"/>
+                                    <constraint firstAttribute="height" constant="44" id="Wmp-Po-2m0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kd2-0H-kbC">
+                                <rect key="frame" x="136.66666666666666" y="177.33333333333334" width="119.99999999999997" height="117.66666666666666"/>
+                                <color key="tintColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="Dyu-z8-25X"/>
+                                    <constraint firstAttribute="width" constant="120" id="Hee-xC-KwS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce el lado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IQv-cJ-68s">
+                                <rect key="frame" x="56.666666666666657" y="324" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ggO-Xl-lO9"/>
+                                    <constraint firstAttribute="width" constant="280" id="wg5-m0-Mlo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JyP-YF-tKs">
+                                <rect key="frame" x="96.666666666666686" y="384" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="7kl-PD-fKm"/>
+                                    <constraint firstAttribute="height" constant="44" id="EoE-3E-xzW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Calcular área"/>
+                                <connections>
+                                    <action selector="botonArea:" destination="kbI-6E-1Kh" eventType="touchUpInside" id="yvk-1c-ZXT"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Área calculada" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PZX-LJ-T9g">
+                                <rect key="frame" x="56.666666666666657" y="444" width="280" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="54P-dR-cX2"/>
+                                    <constraint firstAttribute="height" constant="44" id="s7p-f1-Kp5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vHG-ST-HRv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JyP-YF-tKs" firstAttribute="centerY" secondItem="qMf-np-ZeM" secondAttribute="centerY" constant="-20" id="BAp-71-6MU"/>
+                            <constraint firstItem="kd2-0H-kbC" firstAttribute="centerY" secondItem="qMf-np-ZeM" secondAttribute="centerY" constant="-190" id="Fkn-Ee-3PX"/>
+                            <constraint firstItem="0HH-he-ej0" firstAttribute="centerX" secondItem="qMf-np-ZeM" secondAttribute="centerX" id="Gud-Yd-8Ta"/>
+                            <constraint firstItem="kd2-0H-kbC" firstAttribute="centerX" secondItem="qMf-np-ZeM" secondAttribute="centerX" id="I3c-2U-lYp"/>
+                            <constraint firstItem="PZX-LJ-T9g" firstAttribute="centerX" secondItem="qMf-np-ZeM" secondAttribute="centerX" id="YIJ-kQ-ils"/>
+                            <constraint firstItem="JyP-YF-tKs" firstAttribute="centerX" secondItem="qMf-np-ZeM" secondAttribute="centerX" id="chm-Xx-hT1"/>
+                            <constraint firstItem="IQv-cJ-68s" firstAttribute="centerY" secondItem="qMf-np-ZeM" secondAttribute="centerY" constant="-80" id="k0y-in-jrR"/>
+                            <constraint firstItem="PZX-LJ-T9g" firstAttribute="centerY" secondItem="qMf-np-ZeM" secondAttribute="centerY" constant="40" id="l9K-tH-VFd"/>
+                            <constraint firstItem="IQv-cJ-68s" firstAttribute="centerX" secondItem="qMf-np-ZeM" secondAttribute="centerX" id="nhX-TI-FSp"/>
+                            <constraint firstItem="0HH-he-ej0" firstAttribute="centerY" secondItem="qMf-np-ZeM" secondAttribute="centerY" constant="-280" id="pk3-6L-uof"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cuadrado" image="square.fill" catalog="system" id="uCv-K1-Y58"/>
+                    <connections>
+                        <outlet property="textArea" destination="PZX-LJ-T9g" id="LZB-DQ-Kd5"/>
+                        <outlet property="textCuadrado" destination="IQv-cJ-68s" id="Yll-Xw-1tP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kps-Dq-YRn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="252.67175572519082" y="810.56338028169023"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="128"/>
+        <image name="circle.fill" catalog="system" width="128" height="128"/>
+        <image name="square" catalog="system" width="128" height="119"/>
+        <image name="square.fill" catalog="system" width="128" height="119"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.55294117649999996" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.79607843140000001" green="0.18823529410000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
